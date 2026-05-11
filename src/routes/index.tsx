@@ -12,14 +12,6 @@ import { Building } from "@/components/sections/Building";
 import { Contact } from "@/components/sections/Contact";
 
 export const Route = createFileRoute("/")({
-  head: () => ({
-    meta: [
-      { title: "Balwinder Singh — Frontend Engineer & Node.js Developer" },
-      { name: "description", content: "Frontend Engineer crafting cinematic interfaces & resilient Node.js systems. 2+ years building production products with React, Angular, TypeScript & Express." },
-      { property: "og:title", content: "Balwinder Singh — Frontend Engineer" },
-      { property: "og:description", content: "Cinematic interfaces. Resilient Node.js systems. Production-grade craft." },
-    ],
-  }),
   component: Index,
 });
 
