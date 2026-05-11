@@ -3,46 +3,70 @@ import { Reveal } from "../Reveal";
 
 const projects = [
   {
-    name: "Conversly",
-    tag: "Communication Platform",
-    desc: "Modern conversation & messaging platform with interactive real-time features.",
-    stack: ["React", "Node.js", "WebSockets"],
-    accent: "from-[var(--neon-cyan)]/40 to-[var(--neon-violet)]/30",
-    n: "001",
-  },
-  {
     name: "ShipDistrict",
     tag: "Logistics System",
     desc: "Shipping platform with advanced workflows, label generation & operational tooling.",
     stack: ["Angular", "Express", "REST APIs"],
     accent: "from-[var(--neon-magenta)]/40 to-[var(--neon-cyan)]/30",
     n: "002",
+    image: "/images/ShipDistrict.png",
   },
   {
-    name: "Collecta Gift",
+    name: "CollectaGift",
     tag: "Rewards Engine",
     desc: "Gift card & rewards platform with redemption flows and transaction orchestration.",
     stack: ["React", "TypeScript", "Node.js"],
     accent: "from-[var(--neon-lime)]/30 to-[var(--neon-cyan)]/30",
     n: "003",
+    image: "/images/CollectaGift.png",
   },
   {
-    name: "Gardnstead Admin",
-    tag: "Dashboard Suite",
-    desc: "Advanced admin dashboard for community platform management & analytics.",
-    stack: ["React", "Tailwind", "Node.js"],
+    name: "Conversly",
+    tag: "Communication Platform",
+    desc: "Modern conversation & messaging platform with interactive real-time features.",
+    stack: ["React", "Node.js", "WebSockets"],
+    accent: "from-[var(--neon-cyan)]/40 to-[var(--neon-violet)]/30",
+    n: "001",
+    image: "/images/Conversly.png",
+  },
+
+  {
+    name: "Beauty Spot",
+    tag: "Salon Booking Platform",
+    desc: "Appointment booking system for salons with scheduling, staff management, and customer reservations.",
+    stack: ["React", "Node.js", "MongoDB"],
     accent: "from-[var(--neon-violet)]/40 to-[var(--neon-magenta)]/30",
     n: "004",
+    image: "/images/BeautySpot.png",
   },
+
+  // {
+  //   name: "Lit HRM",
+  //   tag: "Employee Management System",
+  //   desc: "HRM platform for managing employees, attendance, payroll, and organizational workflows.",
+  //   stack: ["Angular", "Node.js", "MySQL"],
+  //   accent: "from-[var(--neon-cyan)]/30 to-[var(--neon-lime)]/30",
+  //   n: "005",
+  //   image: "/images/Lit HRM.png",
+  // },
 ];
 
+// {
+//   name: "Gardnstead Admin",
+//   tag: "Dashboard Suite",
+//   desc: "Advanced admin dashboard for community platform management & analytics.",
+//   stack: ["React", "Tailwind", "Node.js"],
+//   accent: "from-[var(--neon-violet)]/40 to-[var(--neon-magenta)]/30",
+//   n: "004",
+//   image: "/images/my-project.png",
+// },
 export function Work() {
   return (
     <section id="work" className="relative px-6 py-32 md:py-48">
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-20 flex items-end justify-between flex-wrap gap-6">
           <div>
-            <span className="font-mono text-xs uppercase tracking-[0.3em] text-[var(--neon-magenta)]">
+            <span className="font-mono text-xs uppercase tracking-[0.3em] text-neon-magenta">
               02 — Selected Work
             </span>
             <h2 className="mt-6 font-display text-5xl md:text-7xl font-bold tracking-tighter">
@@ -64,15 +88,14 @@ export function Work() {
                 data-cursor="hover"
               >
                 {/* Animated preview gradient */}
-                <div className="relative mb-8 aspect-[16/10] overflow-hidden rounded-2xl border border-border bg-background">
-                  <div className={`absolute inset-0 bg-gradient-to-br ${p.accent} opacity-80`} />
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15),transparent_50%)]" />
-                  {/* scan line */}
-                  <div className="absolute inset-0 overflow-hidden">
-                    <div className="absolute inset-x-0 h-px bg-gradient-to-r from-transparent via-white/60 to-transparent animate-scan" />
-                  </div>
+                <div
+                  className="relative mb-2 aspect-16/10 rounded-3xl bg-contain bg-top bg-no-repeat"
+                  style={{ backgroundImage: `url(${p.image})` }}
+                >
+                  {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.15),transparent_50%)]" /> */}
+
                   {/* mock UI */}
-                  <div className="absolute inset-6 flex flex-col gap-2">
+                  {/* <div className="absolute inset-6 flex flex-col gap-2">
                     <div className="flex gap-1.5">
                       <div className="h-2 w-2 rounded-full bg-white/30" />
                       <div className="h-2 w-2 rounded-full bg-white/30" />
@@ -83,10 +106,7 @@ export function Work() {
                       <div className="h-2 w-1/2 rounded bg-white/20" />
                       <div className="h-2 w-1/4 rounded bg-white/30" />
                     </div>
-                  </div>
-                  <div className="absolute top-4 right-4 font-mono text-[10px] tracking-widest text-white/70">
-                    {p.n}
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="flex items-start justify-between gap-4">
