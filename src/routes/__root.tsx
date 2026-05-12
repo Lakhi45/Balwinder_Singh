@@ -107,56 +107,41 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         property: "og:title",
         content: "Balwinder Singh — Frontend Engineer",
       },
-
       {
         property: "og:description",
         content: "Cinematic interfaces. Resilient systems.",
       },
-
       {
         property: "og:type",
         content: "website",
       },
-
+      {
+        property: "og:url",
+        content: "https://balwinder-singh.vercel.app",
+      },
       {
         property: "og:image",
         content: "https://balwinder-singh.vercel.app/SEO-Image.png",
       },
-
       {
-        property: "og:url",
-        content: "https://yourdomain.com",
+        property: "og:image:width",
+        content: "1200",
       },
-
       {
-        property: "og:site_name",
-        content: "Balwinder Singh Portfolio",
+        property: "og:image:height",
+        content: "630",
       },
-
-      /* Twitter */
+      {
+        property: "og:image:type",
+        content: "image/png",
+      },
       {
         name: "twitter:card",
         content: "summary_large_image",
       },
-
-      {
-        name: "twitter:title",
-        content: "Balwinder Singh — Frontend Engineer",
-      },
-
-      {
-        name: "twitter:description",
-        content: "Cinematic interfaces. Resilient systems.",
-      },
-
       {
         name: "twitter:image",
         content: "https://balwinder-singh.vercel.app/SEO-Image.png",
-      },
-
-      {
-        name: "theme-color",
-        content: "#0f172a",
       },
     ],
 
