@@ -71,35 +71,125 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
   head: () => ({
     meta: [
       { charSet: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Balwinder Singh — Frontend Engineer" },
+
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1",
+      },
+
+      {
+        title: "Balwinder Singh — Frontend Engineer",
+      },
+
+      {
+        name: "title",
+        content: "Balwinder Singh — Frontend Engineer",
+      },
 
       {
         name: "description",
-        content: "Frontend Engineer crafting cinematic interfaces & systems.",
+        content: "Frontend Engineer crafting cinematic interfaces & Node.js systems.",
       },
 
-      { property: "og:title", content: "Balwinder Singh — Frontend Engineer" },
-      { property: "og:description", content: "Cinematic interfaces. Production-grade systems." },
-      { property: "og:type", content: "website" },
+      {
+        name: "keywords",
+        content:
+          "Balwinder Singh, Frontend Engineer, React Developer, Angular Developer, Node.js Developer, Portfolio",
+      },
+
+      {
+        name: "author",
+        content: "Balwinder Singh",
+      },
+
+      /* Open Graph */
+      {
+        property: "og:title",
+        content: "Balwinder Singh — Frontend Engineer",
+      },
+
+      {
+        property: "og:description",
+        content: "Cinematic interfaces. Resilient systems.",
+      },
+
+      {
+        property: "og:type",
+        content: "website",
+      },
+
+      {
+        property: "og:image",
+        content: "/SEO-Image.png",
+      },
+
+      {
+        property: "og:url",
+        content: "https://yourdomain.com",
+      },
+
+      {
+        property: "og:site_name",
+        content: "Balwinder Singh Portfolio",
+      },
+
+      /* Twitter */
+      {
+        name: "twitter:card",
+        content: "summary_large_image",
+      },
+
+      {
+        name: "twitter:title",
+        content: "Balwinder Singh — Frontend Engineer",
+      },
+
+      {
+        name: "twitter:description",
+        content: "Cinematic interfaces. Resilient systems.",
+      },
+
+      {
+        name: "twitter:image",
+        content: "/images/SEO-Image.png",
+      },
+
+      {
+        name: "theme-color",
+        content: "#0f172a",
+      },
     ],
+
     links: [
       {
         rel: "icon",
-        href: "/favicon.svg",
+        type: "image/png",
+        href: "/favicon.png",
       },
-      { rel: "preconnect", href: "https://fonts.googleapis.com" },
-      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+
+      {
+        rel: "preconnect",
+        href: "https://fonts.googleapis.com",
+      },
+
+      {
+        rel: "preconnect",
+        href: "https://fonts.gstatic.com",
+        crossOrigin: "anonymous",
+      },
+
       {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap",
       },
+
       {
         rel: "stylesheet",
         href: appCss,
       },
     ],
   }),
+
   shellComponent: RootShell,
   component: RootComponent,
   notFoundComponent: NotFoundComponent,
