@@ -151,7 +151,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
       {
         name: "twitter:image",
-        content: "/images/SEO-Image.png",
+        content: "/SEO-Image.png",
       },
 
       {
