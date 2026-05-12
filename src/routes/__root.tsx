@@ -120,7 +120,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
       {
         property: "og:image",
-        content: "/SEO-Image.png",
+        content: "https://balwinder-singh.vercel.app/SEO-Image.png",
       },
 
       {
@@ -151,7 +151,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
       {
         name: "twitter:image",
-        content: "/SEO-Image.png",
+        content: "https://balwinder-singh.vercel.app/SEO-Image.png",
       },
 
       {
